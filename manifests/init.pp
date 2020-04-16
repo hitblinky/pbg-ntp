@@ -8,7 +8,7 @@ class pbg_ntp {
      require => Package['ntp'],
   }
 
-  service [ 'ntp':
+  service { 'ntp':
      ensure => running,
      enable => true,
   }
